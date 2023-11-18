@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Big Star</title>
+  <style>
+    .star {
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-bottom: 100px solid yellow; /* Adjust color as needed */
+      position: relative;
+    }
+
+    .star::before,
+    .star::after {
+      content: '';
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-bottom: 100px solid yellow; /* Adjust color as needed */
+      position: absolute;
+      top: -50px;
+      left: 0;
+    }
+
+    .star::after {
+      transform: rotate(180deg);
+    }
+  </style>
+</head>
+<body>
+  <div class="star"></div>
+</body>
+</html>

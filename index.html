@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Kdam+Thmor+Pro">
+    
+
+
+    <style>
+        .icon {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            overflow: hidden; 
+            border: 2px solid #ccc; 
+            box-shadow:  8px 8px 16px rgba(151, 149, 149, 0.5);
+        }
+
+        
+        .icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <div class="page1">
+    <div class="animated-background">
+    <nav>
+     <div class="nav-con">
+        <div class="icon">
+            <img src="https://scontent.fbkk6-1.fna.fbcdn.net/v/t39.30808-6/368283936_1232085687667397_4622795132795231115_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEoHjmGu42G1vVsppR4VxcRXrl15119F1FeuXXnXX0XUdPz45gDD5Kz5rknCbxueoWsdW8J7HKwf51ZSUf8nbgi&_nc_ohc=JUQTJF1_20MAX-VX-R3&_nc_ht=scontent.fbkk6-1.fna&oh=00_AfDCRuWIPR_utYx90F_7D_V8w4ATIVAJWiIcFhIbrXKe0A&oe=655C8CC5" alt="">
+      </div>
+        <div class="menu">
+            <a onclick="scrollToNextPage()">About</a>
+            <a href="https://www.instagram.com/txndp_0331/">Instragram</a>
+            <a href="workshop.html">Works</a>
+        </div>
+        
+     </div>
+    </nav>
+    <div class="body-con">
+        <div class="who">
+            <div class="W">W</div>
+            <div class="H">H</div>
+            <div class="O">O</div>
+            <div class="I">I</div>
+            <div class="A">A</div>
+            <div class="M">M</div>
+            <div class="Ques">?</div>
+        </div>
+      
+        <div class="contacts-con">
+            <div class="contacts">
+                <div class="animated-box1"></div>
+                <div class="animated-box2"></div>
+                <div class="animated-box3"></div>
+                <div class="animated-box4"></div>
+                <div class="animated-box5"></div>
+                
+            </div>
+        </div>
+</div>
+</div>
+     <div class="page2" id="page2">
+        <div class="info" >
+            <div class="info-myself">  
+                <div class="pic" >
+                    <img src="" alt="">
+                </div>
+            </div>
+
+            <div class="text-info">
+            <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>    
+    </div>
+
+
+        <footer id="page3">
+            <div class="contacts-real">
+                <h1>This is Random Contacts Boxes Let's Click Box !</h1>
+            <div class="boxes">
+                <div class="github" id="github" >
+                    <div class="box1"></div>
+                </div>
+                <div class="dc" id="dc">
+                    <div class="box2"></div>
+                </div>
+                <div class="gmail" id="gmail">
+                    <div class="box3"></div>
+                </div>
+            </div>
+            </div>
+        </footer>
+
+        <script>
+               function scrollToNextPage() {
+            const nextPage = document.getElementById('page2');
+            nextPage.scrollIntoView({ behavior: 'smooth' });
+        }
+                document.getElementById('github').onclick = function() {
+            window.location.href = 'https://github.com/Txndp';
+            }
+
+
+
+        </script>
+
+</body>
+</html>

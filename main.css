@@ -111,6 +111,7 @@ body, html {
     font-size: 1.5rem;
     font-weight: 700;
     text-shadow: 2px 2px 6px rgba(91, 223, 223, 0.5);
+    transition: 3s;
     &:hover {
         transition: 1.5s;
         opacity: 50%;
@@ -292,10 +293,10 @@ body, html {
     background-color: #3498db;
     border: 10px solid white;
     position: relative;
-    animation: moveRight1 3s ease-in-out infinite; /* Apply the animation */
+    animation: movetop1 3s ease-in-out infinite; 
 }
 
-@keyframes moveRight1 {
+@keyframes movetop1 {
     0% {
         top: 0;
     }
@@ -313,10 +314,10 @@ body, html {
     background-color: green;
     border: 10px solid white;
     position: relative;
-    animation: moveRight2 3s ease-in-out infinite; /* Apply the animation */
+    animation: movetop2 3s ease-in-out infinite; 
 }
 
-@keyframes moveRight2 {
+@keyframes movetop2 {
     0% {
         top: 0;
     }
@@ -334,10 +335,10 @@ body, html {
     
     border: 10px solid white;
     position: relative;
-    animation: moveRight3 2s ease-in-out infinite; /* Apply the animation */
+    animation: movetop3 2s ease-in-out infinite; 
 }
 
-@keyframes moveRight3 {
+@keyframes movetop3 {
     0% {
         top: 0;
     }
@@ -355,10 +356,10 @@ body, html {
     background-color: rgb(83, 0, 128);
     border: 10px solid white;
     position: relative;
-    animation: moveRight4 3s ease-in-out infinite; /* Apply the animation */
+    animation: movetop4 3s ease-in-out infinite;
 }
 
-@keyframes moveRight4 {
+@keyframes movetop4 {
     0% {
         top: 0;
     }
@@ -377,10 +378,10 @@ body, html {
     background-color:yellow;
     border: 10px solid white;
     position: relative;
-    animation: moveRight5 3s ease-in-out infinite; /* Apply the animation */
+    animation: movetop5 3s ease-in-out infinite;
 }
 
-@keyframes moveRight5 {
+@keyframes movetop5 {
     0% {
         top: 0;
     }
@@ -418,6 +419,7 @@ body, html {
             border: 7px solid white;
             position: relative;
             box-shadow: 4px 4px 8px rgb(94, 93, 93);
+            transition: 3s;
             &:hover{
                 transition: 2.5s;
                 opacity: 60%;
@@ -443,4 +445,70 @@ body, html {
 }
 
 
+.text-info > p {
+    overflow: hidden; 
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 4px; 
+    transition: 3s;
+    animation: typing 5s steps(24, end)infinite, blink-caret 1.2s step-end infinite;
 
+}
+
+.text-main > p{
+    overflow: hidden; 
+    white-space: nowrap;
+    transition: 3s;
+    margin: 0 auto;
+    letter-spacing: 4px; 
+    animation: typing 5s steps(24, end) 2 , blink-caret 1.2s step-end 2;
+}
+
+.spaceship {
+    display: flex;
+    position:relative;
+    bottom: 10px;
+    height: 200px;
+    transition: 3s;
+    transform: translateY(45rem);
+    animation: space 8s  steps(24,end) ;
+
+}
+
+@keyframes space {
+    0% {
+        transform: translateY(20rem);
+
+    }
+    50%{
+        transform: translateY(-10rem);
+    }
+    100%{
+        transform: translateY(-40rem);
+
+    }
+}
+
+.cloud {
+    display: flex;
+    position:relative;
+    bottom: 10px;
+    height: 200px;
+    transition: 3s;
+    &:hover{
+        opacity: 60%;
+        transform: translateY(2rem);
+    }
+}
+
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+
+
+  @keyframes blink-caret {
+    from, to { border-right: 4px solid black; }
+    50% { border-right: 4px solid transparent; }
+  }
